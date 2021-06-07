@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center vh-100 mx-3">
+            <form class="col-lg-3 border border-primary border-5 rounded-3 p-4 bg-info bg-gradient"
+                name="cal">
+                <div class="row">
+                    <input
+                        class=" col m-2 form-control border border-secondary border-5 bg-light bg-gradient fw-bolder fs-4 text-primary"
+                        type="text" name="txt">
+                </div>
+                <div class="row">
+                    <span class="col m-2 btn btn-danger fw-bolder fs-4" onclick="document.cal.txt.value = ''">C</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '/'">/</span>
+                </div>
+                <div class="row">
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '7'">7</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '8'">8</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '9'">9</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '*'">*</span>
+                </div>
+                <div class="row">
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '4'">4</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '5'">5</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '6'">6</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '-'">-</span>
+                </div>
+                <div class="row">
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '1'">1</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '2'">2</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '3'">3</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '+'">+</span>
+                </div>
+                <div class="row">
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '0'">0</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '00'">00</span>
+                    <span class="col m-2 btn btn-primary fw-bolder fs-4"
+                        onclick="document.cal.txt.value += '.'">.</span>
+                    <span class="col m-2 btn btn-success fw-bolder fs-4"
+                        onclick="document.cal.txt.value = eval(cal.txt.value )">=</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
